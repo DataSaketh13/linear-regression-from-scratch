@@ -44,7 +44,7 @@ decide which direction to move the parameters.
 
 ## Implementation
 
-`Gradient Descent From Scratch.ipynb` contains a `LinearRegressionGd` class
+`Gradient Descent From Scratch (1).ipynb` contains a `LinearRegressionGd` class
 written in pure NumPy (no scikit-learn):
 
 - `__init__` — stores the learning rate and epoch count, initializes m and b to 0
