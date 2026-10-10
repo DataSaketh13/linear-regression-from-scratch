@@ -41,3 +41,16 @@ These two expressions are what gradient descent evaluates at each step to
 decide which direction to move the parameters.
 
 ---
+
+## Implementation
+
+`Gradient Descent From Scratch.ipynb` contains a `LinearRegressionGd` class
+written in pure NumPy (no scikit-learn):
+
+- `__init__` — stores the learning rate and epoch count, initializes m and b to 0
+- `predict` — applies the current line to the input
+- `fit` — runs the training loop: predict, compute residuals, record MSE,
+  evaluate both gradients, step both parameters against them
+
+Tested on synthetic data generated as `y = 3x + 7 + noise`, so the true
+parameters are known in advance. The model recovers m ≈ 3.0 and b ≈ 7.0.
